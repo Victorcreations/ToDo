@@ -1,0 +1,11 @@
+{
+    //Please remove the comments after cloning.
+    
+    "HOST":"", //Usually localhost.
+    "PORT":"", //Enter your database port here use 5432 for postgres and postgres is recommended.
+    "DBNAME":"",//Your database name goes in here.
+    "USERNAME":"", //Your database username using postgres is recommended.
+    "PASSWORD":"",//Your database password.
+    "IMAGES_DIR":"./images/", // The images and logos dir are set by default and it's not recommended to change
+    "LOGOS_DIR":"./Logos/"
+}

@@ -1,0 +1,105 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    border:1px solid rgb(72, 72, 72);
+    position: relative;
+}
+
+h3{
+    font-family: sans-serif;
+}
+
+form input[type="text"],input[type="password"]{
+    width: 50%;
+    border: none;
+    background-color: rgba(97, 94, 94, 0.09);
+    border-radius: 5vh;
+    padding: 1vh;
+}
+
+form input[type="submit"]
+{
+    width: 20%;
+    height: 5%;
+    border: none;
+    border-radius: 2vh;
+    background-color: #2564ec;
+    color: white;
+}
+
+form input[type="submit"]:hover{
+    opacity: 0.5;
+}
+
+form a{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    text-decoration: none;
+    background-color: #2564ec;
+    width: 20%;
+    text-align: center;
+    height: 5%;
+    border-radius: 5vw;
+    color: white;
+}
+
+@keyframes response-popup
+{
+    0%
+    {
+        left:-50%;
+    }
+
+    50%
+    {
+        left: 0%;
+    }
+
+    100%
+    {
+        left: -50%;
+    }
+}
+
+.response-message{
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 20%;
+    height: 5%;
+    animation: response-popup 5s ease-in-out;
+    text-align: center;
+}
+
+.response-message p
+{
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+}
