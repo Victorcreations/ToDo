@@ -193,7 +193,6 @@
             <div class="heading">
                 <img src="<?php echo $Config->getConfig('IMAGES_DIR')."Logo.svg"; ?>" alt="Logo">
                 <h2>My Task Board</h2>
-                <img src="<?php echo $Config->getConfig('IMAGES_DIR')."Edit_duotone.svg"; ?>" alt="Edit">
             </div>
 
             <h4 class="tasks">Taks to keep organized</h4>
